@@ -6,11 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Category.destroy_all
 Item.destroy_all
 
 
-Category.create(name: "stones")
+# Category.create(name: "stones")
 Item.create([
     {name: "Clear Quartz", quantity: 15, price: 10.00, description: "This crystal is considered a “master healer.” It’s said to amplify energy by absorbing, storing, releasing, and regulating it. It’s also said to aid concentration and memory. Physically, clear crystals are claimed to help stimulate the immune system and balance out your entire body. This stone is often paired with others like rose quartz to aid and enhance their abilities.", image_url: "https://www.healingcrystals.com/images/Specimen---Clear-Quartz-Cathedral-Point-18-Himalayan-01.jpg", category_id: 1},
     {name: "Rose Quartz", quantity: 20, price: 10.00, description: "This crystal is said to help restore trust and harmony in all different kinds of relationships while improving their close connections. It’s also claimed to help provide comfort and calm during times of grief. It isn’t all about other people, though. Rose quartz is said to also encourage love, respect, trust, and worth within one’s self.", image_url: "https://cdn.shopify.com/s/files/1/0273/4214/3566/files/Untitled_design_-_2020-06-30T133217.538.jpg?v=1593520346", category_id: 1},
@@ -25,7 +24,7 @@ Item.create([
 ])
 
 
-Category.create(name: "herbs")
+# Category.create(name: "herbs")
 Item.create([
     {name: "Basil", quantity: 13, price: 1.99, description: "Uses span from protection to love to wealth to exorcisms. Also a delicious herb to use when cooking.", image_url: "https://cdn.shopify.com/s/files/1/0156/0137/products/Basil_plant_1280x960_0fc95446-605c-49e3-aa42-c6f3a171b8ae.jpg", category_id: 2},
     {name: "Rosemary", quantity: 20, price: 1.99, description: "Execellect for purification, lust and love, good health, preventing nightmares, and all kinds of sea witchery.", image_url: "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Rosemary-sprig-7d96e10.jpg?quality=90&resize=960,872", category_id: 2},
@@ -40,7 +39,7 @@ Item.create([
 ])
 
 
-Category.create(name: "candles")
+# Category.create(name: "candles")
 Item.create([
     {name: "Red Chime", quantity: 10, price: 1.00, description: "Passion, Fire, Strength, Power, Motivation, Desire, Ambition, Business Deals, Confrontation, Courage, Self Esteem", image_url: "https://www.100candles.com/res/items/3433/lg_item_3433_1.jpg", category_id: 3},
     {name: "Orange Chime", quantity: 5, price: 1.00, description: "Relieving Depression, Sealing Spells, Increasing Opportunities, Mental Alertness, Kindness, Harvest, Strength, Dominance, Legal Matters, Happiness", image_url: "https://www.100candles.com/res/items/8928/lg_item_8928_1.jpg", category_id: 3},
