@@ -1,5 +1,4 @@
 class ItemSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name, :price, :quantity, :description, :image_url
-  belongs_to :category
+  attributes :name, :price, :quantity, :description, :image_url, :category_id, :category_name
 end
