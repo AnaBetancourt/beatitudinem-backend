@@ -7,6 +7,16 @@ class ItemsController < ApplicationController
         render json: ItemSerializer.new(items)
     end
 
+    def new
+        item = Item.new(item_params)
+        if item.save(item_params)
+            render json: ItemSerializer.new(item)
+        else
+            render json: {error: "Unable to add new item."}
+        end
+
+    end
+
     def show
         item = Item.find(params[:id])
         render json: ItemSerializer.new(item, {include: [:category]})
