@@ -7,9 +7,10 @@ class ItemsController < ApplicationController
         render json: ItemSerializer.new(items)
     end
 
-    def new
+    def create
         item = Item.new(item_params)
-        if item.save(item_params)
+
+        if item.save
             render json: ItemSerializer.new(item)
         else
             render json: {error: "Unable to add new item."}
